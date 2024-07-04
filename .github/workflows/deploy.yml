@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if it's not 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Clean cache
+        run: |
+          sudo rm -rf /usr/local/.gh_actions
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'  # Change this to the Python version your project uses
+
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Build static files
+        run: |
+          # Add commands to generate your static files if needed
+          # For example, you might run a custom Flask command to collect static files
+          mkdir -p build
+          cp -r Lifegiver_test/lifegiver/static/* build/
+          cp -r Lifegiver_test/lifegiver/static/css/* build/
+          cp -r Lifegiver_test/lifegiver/static/images/* build/
+          cp -r Lifegiver_test/lifegiver/templates/* build/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.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 }}
+          publish_dir: ./build  # Update this to the directory containing your built site
