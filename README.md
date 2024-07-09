@@ -1,6 +1,6 @@
 # LifeGiver
 ## Where your blood can save lives
-<img src = "https://drive.google.com/drive/u/0/home"> <br>
+<img src = "https://drive.google.com/file/d/1GKy4POR4Bv7jktFs459rH5eMm9Mpzy8P/view?usp=sharing"> <br>
 Don't let fools or mosquitoes get your blood; make good use of it. Use it to save lives instead.
 Welcome to LifeGiver, a platform designed to connect donors with those in need and make every drop count.
 
