@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # LifeGiver  ~ * Where your blood can save lives *
 
-![logo](https://imgur.com/W8j3let)
+(https://imgur.com/Z9FQD5q)
 
 Don't let fools or mosquitoes get your blood; make good use of it. Use it to save lives instead.
 Welcome to LifeGiver, a platform designed to connect donors with those in need and make every drop count.
